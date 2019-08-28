@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Todo Lists</string>
+
+    <string name="position" translatable="false">position</string>
+
+    <string name="loginUsernameHint">Username</string>
+    <string name="loginPasswordHint">Password</string>
+    <string name="loginSignIn">Sign In</string>
+    <string name="loginPasswordRepeat">Password Repeat</string>
+    <string name="loginSignUp">Sign Up</string>
+    <string name="loginSignUpText">Does not have an account? Sign up now.</string>
+    <string name="loginSignInText">Have an account? Sign in now.</string>
+    <string name="userAlreadyExists">Given username is already exists.</string>
+    <string name="signUpSuccess">Sign up successful!</string>
+    <string name="signInSuccess">Sign in success!</string>
+    <string name="signInCredentialsFailed">Please check your username and password</string>
+    <string name="signInUsernameFailed">Please enter valid username</string>
+    <string name="signInPasswordFailed">Please enter valid password</string>
+    <string name="todolistEmptyText">There is no todo list.</string>
+    <string name="addTodoList">Add Todo List</string>
+    <string name="titleTodoLists">Todo Lists</string>
+    <string name="title">Title</string>
+    <string name="create">Create</string>
+    <string name="addTodoListFailed">Title must be at least 3 characters!</string>
+    <string name="addTodoListSuccess">Todo list created!</string>
+    <string name="titleTodoListAdd">Todo List Add</string>
+    <string name="titletodoItemAdd">Todo Item Add</string>
+    <string name="deadline">Deadline</string>
+    <string name="description">Description</string>
+    <string name="todoItemAddTitleFailed">Title must be at least 3 characters!</string>
+    <string name="todoItemAddDescriptionFailed">Description must be at least 3 characters!</string>
+    <string name="todoItemAddDeadlineFailed">Please specify a deadline!</string>
+    <string name="titleMenuDelete">Delete</string>
+    <string name="deleteSuccesful">Successfully deleted!</string>
+    <string name="completed">Completed</string>
+    <string name="active">Active</string>
+    <string name="markAsComplete">Mark as completed</string>
+    <string name="todoItemFilter">Filter By</string>
+    <string name="todoItemOrder">Order By</string>
+    <string name="todoEmptyText">There is no todo.</string>
+    <string name="all">All</string>
+    <string name="expired">Expired</string>
+    <string name="createDate">Create Date</string>
+    <string name="status">Status</string>
+    <string name="name">Name</string>
+</resources>

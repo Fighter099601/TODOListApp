@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_navigation"
+    app:startDestination="@id/todoListFragment">
+    <fragment
+        android:id="@+id/todoListFragment"
+        android:name="net.emrekalkan.todolistapp.ui.todolist.TodoListFragment"
+        android:label="Todo List" >
+        <action
+            android:id="@+id/action_todoListFragment_to_todoListAddFragment"
+            app:destination="@id/todoListAddFragment"
+            app:popUpTo="@+id/todoListFragment" />
+        <action
+            android:id="@+id/action_todoListFragment_to_todoItemAddFragment"
+            app:destination="@id/todoItemFragment"
+            app:popUpTo="@+id/todoListAddFragment">
+            <argument
+                android:name="id"
+                android:defaultValue="-1"
+                app:argType="integer" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/todoListAddFragment"
+        android:name="net.emrekalkan.todolistapp.ui.addList.TodoListAddFragment"
+        android:label="Todo List Add" >
+        <action
+            android:id="@+id/action_todoListAddFragment_to_todoListFragment"
+            app:popUpTo="@id/todoListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/todoItemFragment"
+        android:name="net.emrekalkan.todolistapp.ui.todo.TodoItemFragment"
+        android:label="Todos">
+        <action
+            android:id="@+id/action_todoItemFragment_to_todoItemAddFragment"
+            app:destination="@id/todoItemAddFragment"
+            app:popUpTo="@+id/todoItemFragment" />
+        <action
+            android:id="@+id/action_todoItemFragment_to_filterTodoFragment"
+            app:destination="@id/filterTodoFragment"
+            app:popUpTo="@+id/todoItemFragment" />
+        <argument
+            android:name="listId"
+            android:defaultValue="-1"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_todoItemFragment_to_orderTodoFragment"
+            app:destination="@id/orderTodoFragment"
+            app:popUpTo="@+id/todoItemFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/todoItemAddFragment"
+        android:name="net.emrekalkan.todolistapp.ui.addTodo.TodoItemAddFragment"
+        android:label="Add Todo Item" >
+        <action
+            android:id="@+id/action_todoItemAddFragment_to_todoItemFragment"
+            app:popUpTo="@id/todoItemFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/filterTodoFragment"
+        android:name="net.emrekalkan.todolistapp.ui.todo.filterTodo.FilterTodoFragment"
+        android:label="Filter Todos">
+        <action
+            android:id="@+id/action_filterTodoFragment_to_todoItemFragment"
+            app:destination="@id/todoItemFragment"
+            app:popUpTo="@+id/todoListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/orderTodoFragment"
+        android:name="net.emrekalkan.todolistapp.ui.todo.orderTodo.OrderTodoFragment"
+        android:label="OrderTodoFragment" >
+        <action
+            android:id="@+id/action_orderTodoFragment_to_todoItemFragment"
+            app:destination="@id/todoItemFragment"
+            app:popUpTo="@+id/todoListFragment" />
+    </fragment>
+</navigation>
